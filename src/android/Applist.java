@@ -113,8 +113,8 @@ public class Applist extends CordovaPlugin {
                             {
                                     JSONObject info = new JSONObject();  
                                     info.put("name",packageInfo.loadLabel(pm));//这里获取的是应用名
-                                   String img_name =  "/com.ionicframework.xxx/Cache/"+ packageInfo.packageName +".png";//图片保存的是包名
-                                   info.put("img",path+img_name);
+                                //    String img_name =  "/com.ionicframework.xxx/Cache/"+ packageInfo.packageName +".png";//图片保存的是包名
+                                //    info.put("img",path+img_name);
                                     info.put("package", packageInfo.packageName);
                                   //cheak exist  or not
                                     // File  cheakfile  = new File( path + img_name );
