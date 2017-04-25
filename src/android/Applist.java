@@ -117,16 +117,16 @@ public class Applist extends CordovaPlugin {
                                    info.put("img",path+img_name);
                                     info.put("package", packageInfo.packageName);
                                   //cheak exist  or not
-                                    File  cheakfile  = new File( path + img_name );
-                                    if(  !cheakfile.exists()  )
-                                    {
-                                       //获取图像
-                                        Drawable icon = pm.getApplicationIcon(packageInfo);
-                                        if(icon!=null)
-                                        {
-                                            drawableTofile(icon,  path+img_name);
-                                        }
-                                    }
+                                    // File  cheakfile  = new File( path + img_name );
+                                    // if(  !cheakfile.exists()  )
+                                    // {
+                                    //    //获取图像
+                                    //     Drawable icon = pm.getApplicationIcon(packageInfo);
+                                    //     if(icon!=null)
+                                    //     {
+                                    //         drawableTofile(icon,  path+img_name);
+                                    //     }
+                                    // }
                                    app_list.put(cnt++,info);
                             }
                         }
